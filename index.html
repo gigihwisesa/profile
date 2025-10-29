@@ -3,23 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog Sederhana</title>
+  <title>Blog Teknologi Sederhana</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background-color: #f5f5f5;
+      background-color: #f2f2f2;
     }
 
+    /* ====== HEADER ====== */
     header {
-      background-color: #007b5f;
+      background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c');
+      background-size: cover;
+      background-position: center;
       color: white;
-      padding: 20px;
       text-align: center;
+      padding: 80px 20px;
     }
 
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+
+    header p {
+      font-size: 18px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+
+    /* ====== NAVBAR ====== */
     nav {
-      background-color: #0c9463;
+      background-color: #007b5f;
       display: flex;
       justify-content: center;
       padding: 10px 0;
@@ -36,13 +51,22 @@
       text-decoration: underline;
     }
 
+    /* ====== LAYOUT ====== */
     .container {
-      max-width: 900px;
+      display: flex;
+      max-width: 1100px;
       margin: 20px auto;
+      gap: 20px;
+      padding: 0 10px;
+    }
+
+    /* ====== KONTEN ====== */
+    .main-content {
+      flex: 3;
       background-color: white;
       padding: 20px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
       border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
     }
 
     .post {
@@ -58,48 +82,106 @@
       line-height: 1.6;
     }
 
+    /* ====== SIDEBAR ====== */
+    .sidebar {
+      flex: 1;
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    .sidebar h3 {
+      color: #007b5f;
+      border-bottom: 2px solid #007b5f;
+      padding-bottom: 5px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar li {
+      margin: 10px 0;
+    }
+
+    .sidebar a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .sidebar a:hover {
+      color: #007b5f;
+      font-weight: bold;
+    }
+
+    /* ====== FOOTER ====== */
     footer {
       background-color: #007b5f;
       color: white;
       text-align: center;
-      padding: 10px;
-      margin-top: 40px;
+      padding: 15px;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Blog Teknologi Sederhana</h1>
-    <p>Berbagi ilmu seputar jaringan dan teknologi informasi</p>
+    <p>Berbagi ilmu seputar jaringan komputer dan teknologi informasi</p>
   </header>
 
   <nav>
     <a href="#">Beranda</a>
     <a href="#">Artikel</a>
+    <a href="#">Tutorial</a>
     <a href="#">Tentang</a>
     <a href="#">Kontak</a>
   </nav>
 
   <div class="container">
-    <div class="post">
-      <h2>Pengenalan Jaringan Komputer</h2>
-      <p>Jaringan komputer adalah kumpulan dua atau lebih perangkat yang saling terhubung untuk berbagi data dan sumber daya. Jaringan ini sangat penting dalam dunia teknologi karena memudahkan komunikasi antar perangkat di berbagai lokasi.</p>
+    <!-- KONTEN UTAMA -->
+    <div class="main-content">
+      <div class="post">
+        <h2>1. Mengenal Dasar Jaringan Komputer</h2>
+        <p>Jaringan komputer memungkinkan komputer saling terhubung dan berbagi data. Tujuan utamanya adalah agar pengguna dapat berkomunikasi, mengakses file, dan sumber daya bersama seperti printer atau internet.</p>
+      </div>
+
+      <div class="post">
+        <h2>2. Perbedaan LAN, MAN, dan WAN</h2>
+        <p>LAN (Local Area Network) digunakan untuk area kecil seperti sekolah, MAN (Metropolitan Area Network) untuk satu kota, sedangkan WAN (Wide Area Network) mencakup antar wilayah atau negara.</p>
+      </div>
+
+      <div class="post">
+        <h2>3. Tips Menjaga Keamanan Jaringan</h2>
+        <p>Gunakan firewall, antivirus, serta ubah password secara berkala. Pastikan juga jaringan WiFi diberi enkripsi WPA2 agar tidak mudah diretas.</p>
+      </div>
     </div>
 
-    <div class="post">
-      <h2>Tips Merawat Komputer Agar Awet</h2>
-      <p>Menjaga komputer agar tetap awet bisa dilakukan dengan rutin membersihkan debu, menggunakan antivirus, serta tidak terlalu memaksa komputer bekerja berat tanpa pendinginan yang baik.</p>
-    </div>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h3>Kategori</h3>
+      <ul>
+        <li><a href="#">Jaringan Komputer</a></li>
+        <li><a href="#">Pemrograman</a></li>
+        <li><a href="#">Hardware</a></li>
+        <li><a href="#">Software</a></li>
+      </ul>
 
-    <div class="post">
-      <h2>Belajar HTML dan CSS untuk Pemula</h2>
-      <p>HTML digunakan untuk membuat struktur halaman web, sedangkan CSS digunakan untuk mengatur tampilan agar lebih menarik. Keduanya adalah dasar dari pembuatan website modern.</p>
-    </div>
+      <h3>Artikel Populer</h3>
+      <ul>
+        <li><a href="#">Cara Membuat Topologi di Cisco Packet Tracer</a></li>
+        <li><a href="#">Belajar Dasar HTML dan CSS</a></li>
+        <li><a href="#">Perbedaan Router dan Switch</a></li>
+      </ul>
+    </aside>
   </div>
 
   <footer>
     <p>&copy; 2025 Blog Teknologi Sederhana | Dibuat oleh Siswa TKJ</p>
   </footer>
+
 </body>
 </html>
-
