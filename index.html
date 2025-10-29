@@ -1,9 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Sederhana</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: #007b5f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #0c9463;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    .post {
+      margin-bottom: 30px;
+    }
+
+    .post h2 {
+      color: #007b5f;
+    }
+
+    .post p {
+      text-align: justify;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #007b5f;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
 <body>
+  <header>
+    <h1>Blog Teknologi Sederhana</h1>
+    <p>Berbagi ilmu seputar jaringan dan teknologi informasi</p>
+  </header>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+  <nav>
+    <a href="#">Beranda</a>
+    <a href="#">Artikel</a>
+    <a href="#">Tentang</a>
+    <a href="#">Kontak</a>
+  </nav>
 
+  <div class="container">
+    <div class="post">
+      <h2>Pengenalan Jaringan Komputer</h2>
+      <p>Jaringan komputer adalah kumpulan dua atau lebih perangkat yang saling terhubung untuk berbagi data dan sumber daya. Jaringan ini sangat penting dalam dunia teknologi karena memudahkan komunikasi antar perangkat di berbagai lokasi.</p>
+    </div>
+
+    <div class="post">
+      <h2>Tips Merawat Komputer Agar Awet</h2>
+      <p>Menjaga komputer agar tetap awet bisa dilakukan dengan rutin membersihkan debu, menggunakan antivirus, serta tidak terlalu memaksa komputer bekerja berat tanpa pendinginan yang baik.</p>
+    </div>
+
+    <div class="post">
+      <h2>Belajar HTML dan CSS untuk Pemula</h2>
+      <p>HTML digunakan untuk membuat struktur halaman web, sedangkan CSS digunakan untuk mengatur tampilan agar lebih menarik. Keduanya adalah dasar dari pembuatan website modern.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Blog Teknologi Sederhana | Dibuat oleh Siswa TKJ</p>
+  </footer>
 </body>
 </html>
